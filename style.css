@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    top:0;
+}
+nav{
+    display: flex;
+    border: 0.5px solid rgb(128, 127, 127);
+    justify-content:space-between;
+    padding:10px;
+    height:70px;
+    cursor:pointer
+}
+.search{
+    border: 1px solid black;
+    margin-left: 10px;
+    position: relative;
+    padding: 8px;
+    width:40%;
+    border-radius: 25px;
+    height:30px;
+    margin-top: -15px;
+    background-color:rgb(239, 237, 237);
+}
+.heart{
+    font-size: 30px;
+}
+
+svg{
+    width:32px;
+    height: 20px;
+    cursor: pointer;
+}
+.bi-person-circle{
+    height: 30px;
+}
+.innernav{
+    border-color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+/* .udemy_icon{
+    margin: 5px 0px 8px 5px;
+    padding-top: 5%;
+}*/
+
+img{
+    height: 80px;
+    position: relative;
+    top:-30px;
+
+}
+.navbar2{
+    display: flex;
+    height: 25px;
+    justify-content: space-around;
+}
+.welcome_1{
+float:right;
+align-content: left;
+}
+.profIcon{
+    float:left;
+}
+.welcome_container::after{
+    content: "";
+    display: table;
+    clear:fix;
+}
+.welcome_container{
+    width:30%;
+    margin: 2.5% 80% 0 5%;
+    height:80px;
+    display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  gap: 0; 
+}
+ .bi-person-circle_2{
+    height: 80px;
+    width: 50px;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+
+}
+.welcome_2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.occupation{
+    cursor: pointer;
+    color: #5022C3;
+    font-size: 18px;
+    margin: 10px 16px 0px 0px;
+   text-decoration: underline;
+   font-weight: bold;
+
+}
+
+.slider{
+    border: 1px solid black;
+    margin:30px 60px 10px 60px;
+    display: flex;
+    height:400px;
+   
+}
+#img_slide{
+    object-fit: cover;
+    height:400px;
+    width:100%;
+    position: relative;
+    border: 1px solid red;
+    margin-top:30px ;
+}
+#nextbutton_1{
+    position: absolute;
+    top: 70%;
+    left: 90px; 
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+}
+#nextbutton_2{
+    float:right;
+    position: absolute;
+    top: 70%;
+    right: 90px; 
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cousre-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+.course-card{
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.course-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.course-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.course-card p {
+    font-size: 14px;
+    color: #666;
+}
