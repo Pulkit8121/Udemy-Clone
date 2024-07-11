@@ -108,7 +108,6 @@ align-content: left;
     height:400px;
     width:100%;
     position: relative;
-    border: 1px solid red;
     margin-top:30px ;
 }
 #nextbutton_1{
@@ -140,19 +139,27 @@ align-content: left;
     font-size: 16px;
 }
 
-.cousre-list{
+.course_head{
+    margin-top:50px;
+    margin-left:70px; 
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+.course-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    border: 1px solid black;
+    justify-content:space-evenly;
+    width: 90%;
+    
     margin: 20px auto;
 }
 .course-card{
-    border: 1px solid red;
+  
     border-radius: 5px;
-    margin: 10px;
-    width: 200px;
+    margin: 30px 5px 0px 3px;
+    width: 300px;
     padding: 15px;
     text-align: center;
 
@@ -164,9 +171,165 @@ align-content: left;
 }
 .course-card h3 {
     font-size: 18px;
-    margin: 10px 0;
+    margin-bottom:8px;
 }
 .course-card p {
     font-size: 14px;
     color: #666;
+}
+  <!--till api call-- >
+
+  .course-card h3{
+    font-size: 20px;
+    
+}
+.course-card img{
+    margin-top: 35px;
+    height:140px;
+    width:250px;
+}
+
+.price{
+    margin-top:8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.footer_container{
+  
+    color:white;
+}
+
+.footer_1{
+    height: 100px;
+    width:100%;
+    background-color:black;
+}
+.footer_teach{
+    float:left;
+    font-size:18px;
+    padding: 20px;
+    margin-left: 30px;
+
+}
+
+.teachonudemy{
+    float:right;
+    position: center;
+    height: 40px;
+    position: relative;
+    top:15px;
+    right:40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size:18px;
+    cursor: pointer;
+}
+.footer_container::after{
+    display:table;
+    content:"";
+    clear:fix;
+}
+
+.footer_2{
+    height:150px;
+    width:100%;
+    background-color:black;
+    border: 1px solid rgb(88, 87, 87);
+}
+
+.footer_content{
+    float: left;
+    margin-left: -580px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.icon_business{
+    float:right;
+    display:inline;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+}
+
+.icon_business img{
+    width: 85px;
+    position: relative;
+    top: 10px;
+}
+
+.footer_2::after{
+    content: "";
+    display: table;
+    clear: fix;
+}
+
+.footer_3{
+    height:300px;
+    background-color:black;
+    color:white;
+}
+
+.udemy_options{
+    margin-left: 30px;
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 30px;
+
+    
+}
+
+.english{
+    border: 1px solid white;
+    float: right;
+    margin-top: 78px;
+    height: 25px;
+    width: 100px;
+    font-size: 18px;
+    margin-right: 50px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.footer_3::after{
+    content: "";
+    display: table;
+    clear: fix;
+}
+
+.option{
+    width: calc(33.33% - 110px);
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.footer_4{
+    background-color: black;
+    height: 100px;
+    color: white;
+
+}
+
+.udemy_icon{
+float:left;
+width: 2% ;
+margin-left: 40px;
+height: 20px;
+object-fit: cover;
+cursor: pointer;
+
+}
+.copywrite{
+float:right;
+margin-right: 50px;
+}
+
+.footer_4::after{
+    content: "";
+    display: table;
+    clear: fix;
 }

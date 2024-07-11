@@ -23,7 +23,7 @@ nextbtn2.addEventListener('click',()=>{
 async function fetchCourses(){
     try{
         // const apiKey = 'your_api_key_here'; 
-        const response= await fetch('https://jsonplaceholder.typicode.com/posts');
+        const response= await fetch('https://fakestoreapi.com/products');
         const data=await response.json();
 
         const courselist=document.getElementById('courselist');
@@ -31,8 +31,8 @@ async function fetchCourses(){
             const courseCard= document.createElement('div');
             courseCard.className='course-card';
 
-            // const courseImage=document.createElement('img');
-            // courseImage.src=course.image;
+            const courseImage=document.createElement('img');
+            courseImage.src=course.image;
 
             const courseTitle=document.createElement('h3');
             courseTitle.textContent=course.title;
