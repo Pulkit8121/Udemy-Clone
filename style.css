@@ -52,8 +52,48 @@ img{
 .navbar2{
     display: flex;
     height: 25px;
-    justify-content: space-around;
+    padding-left: 140px;    
+    padding-right: 140px;    
+
+
 }
+
+.dropdown-content {
+    display: none;
+    
+    left: 0;
+    background-color:black;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    padding-left: 150px;
+   
+}
+.navbar2_items {
+  
+  
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+ 
+.navbar2_items:hover .dropdown-content{
+    display: block;
+    position: fixed;
+      top: 137px; /* Adjust according to your navbar height */
+      left: 0;
+      width: 100%;
+}
+
 .welcome_1{
 float:right;
 align-content: left;
@@ -333,3 +373,6 @@ margin-right: 50px;
     display: table;
     clear: fix;
 }
+
+
+  
